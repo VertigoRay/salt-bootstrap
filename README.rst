@@ -75,6 +75,12 @@ If all you want is to install a ``salt-master`` using latest git:
   curl -L http://bootstrap.saltstack.org | sudo sh -s -- -M -N git develop
 
 
+Have sudo prompt before the curl so the password prompt shows up every time:
+
+.. code:: console
+
+  sudo sh -c "$(curl -L http://bootstrap.saltstack.org)" -M -N git develop
+
 
 Adding support for other operating systems
 ------------------------------------------
