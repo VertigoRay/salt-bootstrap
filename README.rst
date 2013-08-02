@@ -76,6 +76,13 @@ If all you want is to install a ``salt-master`` using latest git:
 
 
 
+Have sudo prompt before the curl so the password prompt shows up every time:
+
+.. code:: console
+
+  sudo sh -c "$(curl -fsSL http://bootstrap.saltstack.org)" -M -N git develop
+
+
 Adding support for other operating systems
 ------------------------------------------
 In order to install salt for a distribution you need to define:
